@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project UAS</title>
+</head>
+<body>
+
+    <div>
+        <div>
+            celsius
+            <input type="number" id="c">
+        </div>
+    </div>
+    <div>
+        <div>
+            Fahrenheit
+            <input type="number" id="F">
+        </div>
+    </div>
+    <div>
+        <div>
+            Kelvin
+            <input type="number" id="K">
+        </div>
+    </div>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script>
+        $(function(){
+
+            $("#C").on("input",function(){
+                 console.log("Nilai dari C: "+$("#C").val());
+            });
+
+            $("#F").on("input",function(){
+                console.log("Nilai dari F: "+$("#F").val() );
+            });
+            $("#K").on("input",function(){
+                console.log("Nilai dari K: "+$("#K").val() );
+            }); 
+        })
+    </script>
+    
+</body>
+</html>
